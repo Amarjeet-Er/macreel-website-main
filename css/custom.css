@@ -1,0 +1,45 @@
+/***E-commerce Web**/
+.ecomText {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ecomText,
+ul,
+li {
+    padding-bottom: 6px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 20px;
+}
+
+/***E-commerce Responsive**/
+.content-section {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+/***E-commerce Responsive End**/
+
+.img-fluid {
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.img-container:hover .img-fluid {
+    transform: scale(1.1);
+}
+
