@@ -19,6 +19,12 @@ a[href="analytics-and-reporting"] {
     display: none;
 }
 
+.aligncenterBox {
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+}
+
 /* 
 .bg-breadcrumb{
     display: none;
