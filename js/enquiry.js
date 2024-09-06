@@ -11,10 +11,10 @@ $(document).ready(function () {
                 $('#enquiry-form')[0].reset(); // Reset the form
                 $('#response').html(response); // Display response
                 $('#enquiryModal').modal('hide'); // Close the modal
-                alert('Thank you for your enquiry! We will contact you soon.'); // Show alert last
+                alert('Message Successfully Submmited'); // Show alert last
             },
             error: function () {
-                alert('There was an error processing your enquiry. Please try again.');
+                alert('Message Not Submmited');
             }
         });
     });
