@@ -1,9 +1,15 @@
-
 RewriteEngine On
+
+# If the request is not a directory
 RewriteCond %{REQUEST_FILENAME} !-d
+
+# If the request is not a file with .html extension
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
-RewriteEngine On
+
+# If the request is not a directory
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# If the request is not a file with .php extension
+RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
