@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form data
     $name = $_POST['name'];
     $email = $_POST['email'];
+    $phone = $_POST['phone'];
     $message = $_POST['message'];
     $mail = new PHPMailer(true);
 
@@ -37,8 +38,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </tr>
      
       <tr>
-        <th style="text-align: start;">Mobile:</th>
+        <th style="text-align: start;">Email Id:</th>
         <td>' . $email . '</td>
+    </tr>
+      <tr>
+        <th style="text-align: start;">Mobile:</th>
+        <td>' . $phone . '</td>
     </tr>
        <tr>
         <th style="text-align: start;">Message:</th>
@@ -49,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Send email
         $mail->send();
-        echo '<h2 style="color: #00405a; margin-bottom: 15px;"> Thank you for Enquiry! We will contact you soon. </h2>';
+        echo '';
     } catch (Exception $e) {
         echo "Oops! Something went wrong: {$mail->ErrorInfo}";
     }

@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->SMTPAuth = true;
     $mail->Username = 'macreelinfosoft@gmail.com';
     $mail->Password = 'thwo werv prdz xuhu';
-    $mail->SMTPSecure = 'tls'; 
+    $mail->SMTPSecure = 'tls';
     $mail->Port = 587; // TCP port to connect to
 
     // Sender and recipient settings
@@ -66,20 +66,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send email
     $mail->send();
-    echo '<h2 style="color: #00405a; margin-bottom: 15px;"> Thank you for Enquiry! We will contact you soon. </h2>';
+    echo '';
   } catch (Exception $e) {
     echo "Oops! Something went wrong: {$mail->ErrorInfo}";
   }
 }
 ?>
-
-
-<script>
-  // JavaScript to hide the success message after 10 seconds
-  setTimeout(function () {
-    var successMsg = document.getElementById('response');
-    if (successMsg) {
-      successMsg.style.display = 'none';
-    }
-  }, 3000); // 10 seconds in milliseconds
-</script>
