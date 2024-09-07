@@ -25,8 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port = 587;
 
         // Sender and recipient settings
-        $mail->setFrom('amarjeeter1@gmail.com', 'Macreel Infosoft');
-        $mail->addAddress('amarjeeter1@gmail.com', '');
+        $mail->setFrom('sales@macreel.co.in', 'Macreel Infosoft');
+        $mail->addAddress('sales@macreel.co.in', '');
 
         // Content
         $mail->isHTML(true);
